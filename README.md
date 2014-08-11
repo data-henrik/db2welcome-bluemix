@@ -8,3 +8,4 @@ The code shows how to combine DB2 and Python on IBM Bluemix (http://bluemix.net)
 Some steps are documented in the following blog articles:
 http://blog.4loeser.net/2014/08/using-db2-with-python-on-cloud-foundry.html and http://blog.4loeser.net/2014/08/manage-db2-database-on-ibm-bluemix.html
 
+The Python script depends on the special DB2 Python Buildpack, availabe at https://github.com/ibmdb/db2pythonbuildpack
