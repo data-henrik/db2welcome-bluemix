@@ -1,0 +1,17 @@
+<!doctype html>
+<title>DB2 Information</title>
+<h1>DB2 Information</h1>
+{% if db2info %}
+  OS name: {{db2info["OS_NAME"]}}
+  <br/>OS version: {{db2info["OS_VERSION"]}}
+  <br/>OS full version: {{db2info["OS_FULL_VERSION"]}}
+  <br/>OS kernel version: {{db2info["OS_KERNEL_VERSION"]}}
+  <br/>OS release: {{db2info["OS_RELEASE"]}}
+  <br/>Total CPUs: {{db2info["OS_TOTAL_CPUS"]}}
+  <br/>Configured CPUs: {{db2info["OS_CONFIGURED_CPUS"]}}
+  <br/>Memory: {{db2info["TOTAL_MEMORY"]}} MByte
+  <br/>OS architecture type: {{db2info["OS_ARCH_TYPE"]}}
+{% else %}
+  <h1>Hello World!</h1>
+  <br>No information has been retrieved.
+{% endif %}
