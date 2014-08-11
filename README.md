@@ -1,22 +1,10 @@
-Sample Python Web application
-=============================
+db2welcome-bluemix
+==================
 
-The sample is using [Flask microframework](http://flask.pocoo.org/) and is intented to test the Python support on [Pivotal's Cloud Foundry](https://run.pivotal.io/).
+code for my Welcome DB2 project on IBM Bluemix, some of it has been described on my blog http://blog.4loeser.net
 
-Deploy to Cloud Foundry
------------------------
-```script
-cf push <YOUR_APP_NAME> -m 128M -b https://github.com/heroku/heroku-buildpack-python.git
-```
-or
-```script
-cf push <YOUR_APP_NAME> -m 128M -b https://github.com/joshuamckenty/heroku-buildpack-python.git
-```
-or
-```script
-cf push <YOUR_APP_NAME> -m 128M -b https://github.com/ephoning/heroku-buildpack-python.git
-````
+The code shows how to combine DB2 and Python on IBM Bluemix (http://bluemix.net). It requires either a free trial or a regular account and the creation of a SQL DB (DB2) service. The tables (schema.sql) are created using the administration interface, then the data loaded.
 
-Notes
------
-2014/02/18: The offical Heroku buildpack seems not to be working with Cloud Foundry.
+Some steps are documented in the following blog articles:
+http://blog.4loeser.net/2014/08/using-db2-with-python-on-cloud-foundry.html and http://blog.4loeser.net/2014/08/manage-db2-database-on-ibm-bluemix.html
+
